@@ -49,13 +49,13 @@ public class NumberRangeSummarizerImplementation implements NumberRangeSummarize
                 // Still sequential
                 prev = current;
             } else {
-                // Sequence ended, append range or single number
+                // Sequence ended
                 appendRange(result, start, prev);
                 start = prev = current;
             }
         }
 
-        // Append the last sequence
+        // Append last sequence
         appendRange(result, start, prev);
 
         return result.toString();
