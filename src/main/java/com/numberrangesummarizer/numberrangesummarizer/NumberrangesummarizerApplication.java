@@ -12,14 +12,6 @@ public class NumberrangesummarizerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NumberrangesummarizerApplication.class, args);
-		System.out.println("Running");
-
-		NumberRangeSummarizer test = new NumberRangeSummarizerImplementation();
-
-		String input = "-1, 0, 1,3,6,7,8,12,13,14,15,21,22,23,24,31";
-		Collection<Integer> sortedNumbers = test.collect(input);
-		String result = test.summarizeCollection(sortedNumbers);
-		System.out.println(result);
 	}
 
 }
